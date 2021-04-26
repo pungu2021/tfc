@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*partie header du site */
+header{
+  background-color: rgb(8, 29, 29);
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+}
+.logo-kin{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+  margin-left: -10px;
+  font-weight: bold;
+}
+.logo-dev{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  color: rgba(255, 166, 0, 0.801);
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+.logo{
+  height: 30px;
+  width: 50px;
+  margin-left: 80px;
+  margin-top: 15px;
+}
+/*image d'accueil du site */
+.image-accueil{
+  height: 500px;
+  width:100%;
+  position: relative;
+  z-index: -1;
+  margin-top: 70px;
+}
+.noir{
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -504px;
+  display: flex;
+  align-items: center;
+}
+.bloc-apprendre{
+  padding-left: 50px;
+}
+.bloc-apprendre p{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 34px;
+  width: 50%;
+}
+.btn-inscrivez{
+  height: 40px;
+  width: 150px;
+  background-color: rgb(8, 29, 29);
+  border: teal 1px solid;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-inscrivez:hover{
+  background-color: transparent;
+  transition: 0.5s;
+  color: teal;
+}
+header nav ul{
+  margin-top: -30px;
+  text-align: left;
+  margin-left: 340px;
+}
+header nav ul li{
+  margin-right: 10px;
+  display:inline-block;
+   list-style-type: none;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  transition: 0.5s;
+
+}
+header nav ul li a:hover{
+  color: rgba(255, 166, 0, 0.726);
+  transition: 0.5s;
+}
+/**/
+.textbox-recherche{
+  height: 30px;
+  width: 160px;
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+position: relative;
+top:-3px;
+border:  orange solid 1px;
+background-color: transparent;
+color: white;
+}
+.btn-recherche{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-left: -30px;
+  border: 1px solid transparent;
+  position: relative;
+  top: 4px;
+  background-color: lightslategray;
+  padding-top: 5px  !important;
+  cursor: pointer;
+  border: orange solid 1px;
+  transition: 0.5s;
+}
+.btn-recherche:hover{
+  background-color: rgb(8, 29, 29);
+  border:  teal solid 1px;
+  transition: 0.5s;
+}
+.logo-recherche{
+  height: 25px;
+  width: 25px;
+}
+.div-recherche{
+  position: fixed;
+  top: 12px;
+  right: 300px;
+}
+::placeholder{
+  padding-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  opacity: 0.7;
+  font-size: 17px;
+}
+/*classe ecrit du text  sur la partie accueil */
+.clignoter{
+display: inline-block;
+background-color: rgba(255, 166, 0, 0.801);
+width: 2px;
+height: 25px;
+margin-left: 5px;
+animation: carlos 0.5s linear alternate infinite;
+transition: 0.5s;
+}
+@keyframes carlos{
+   from{
+      opacity: 0;
+      transition: 0.5s;
+   }
+   to{
+          opacity: 1;
+          transition: 0.5s;
+   }
+}
+.deux-button{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+/*deux boutton connnecter et inscrire sur l'entete du site*/
+.btn-con{
+  height: 30px;
+  width: 120px;
+  border: rgba(255, 166, 0, 0.589) solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+  margin-right: 5px;
+  transition: 0.5s;
+ background-color: transparent;
+}
+.btn-con:hover{
+  color: rgba(255, 166, 0, 0.884);
+  background-color: transparent;
+  transition: 0.5s;
+}
+/**********************************************************************
+Partie body du site , partie acceuil du site
+**********************************************************************/
+.main{
+  width: 95%;
+  margin:30px auto;
+}
+.menu-flex{
+   display: flex;
+}
+.first-bloc{
+  width: 60%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+}
+.second-bloc{
+  width: 40%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.titre{
+  display: block;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0.8;
+  font-style: italic;
+}
+.slogan{
+  display: block;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0.7;
+  margin-top: -5px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+.first-bloc p, .second-bloc p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+.slog{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+/**/
+.partenaire-image{
+  height: 35px;
+  width: 50px;
+  margin-top: 20px;
+}
+.bloc-teal{
+  height: 100px;
+  background-color: rgb(8, 29, 29);
+}
+.flex-3{
+  display: flex;
+  justify-content: space-around;
+}
+.statistique-1 , .statistique-2,.statistique-3{
+  width: 30%;
+  text-align: center;
+}
+.stat{
+  display: block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 65px;
+  opacity: 0.8;
+}
+.stat-orange{
+  display: block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 65px;
+  opacity: 0.8;
+  color: orange;
+}
+
+
+
+
+
+
+
+
+[class*="contenu-"]{
+  opacity: 0;
+  transition: 0.5s;
+  transform:scale(0.1)
+}
+[class*="contenus-"]{
+  opacity: 0;
+  transition: 0.5s;
+  transform:translateY(30px);
+}
+.visible-contenu{
+  opacity: 0.8;
+  transition: 1s cubic-bezier(.5,0,0,1);
+  transform:scale(1);
+}
+.visible-trans{
+  opacity: 0.8;
+  transition: 1s cubic-bezier(.5,0,0,1);
+  transform:translateY(0px);
+}
+.contenu-1{
+  transition-delay: .1s;
+}
+.contenu-2{
+  transition-delay: .2s;
+}
+.contenu-3{
+  transition-delay: .3s;
+}
+.contenu-4{
+  transition-delay: .4s;
+}
+.contenus-1{
+  transition-delay: 1s;
+}
+.contenus-2{
+  transition-delay: 2s;
+}
+.contenus-3{
+  transition-delay: 3s;
+}
+.contenus-4{
+  transition-delay: 4s;
+}
+body{
+  height: 3000px;
+}
